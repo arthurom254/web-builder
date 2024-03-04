@@ -3,21 +3,9 @@
   box-sizing: border-box !important;
   padding: 0;
   margin: 0;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
-.main{
-  height: 92vh !important;
-}
-#main{
-  height: 100%;
-}
-.left{
-  background-color: #aeaeae;
-}
-.side-bar{
-  background-color: #000000cb; 
-}
 ion-icon {
 font-size: 1.8rem;
 }
@@ -44,7 +32,6 @@ border-top-color: white !important;
 .box{
 /* background-color: red; */
 text-align: center;
-margin: 1rem 3px ;
 padding: 0.5rem;
 color: rgba(255, 255, 255, 0.418);
 transition: .5s ease;
@@ -65,22 +52,9 @@ color: white;
 #colorPicker {
 width: 100%;
 }
-/* color picker end */
 
-/* Collapse in action bar*/
-/* #action-bar{
-float:left;
-position: relative;
-overflow-y: unset !important;
-height: 100%;
--ms-overflow-style: none;
-scrollbar-width: none;
-} */
-
-/* scrall bar */
-/* Webkit (Chrome, Safari) */
-&::-webkit-scrollbar {
-display: none;
+.canvas img{
+  background-color: white;
 }
 
 
@@ -105,27 +79,18 @@ box-shadow: 1px 2px 14px 2px black;
 /* Collapse end */
 
 /* editor-box in action bar */
-.editor-box{
-margin-top: 0.5em;
-border-radius: 5px;
-}
-.editor-box img{
-overflow: hidden;
-object-fit: cover;
-}
+
 
 .text-color-primary{
 color: rgba(255, 255, 255, 0.418);
 }
 .text-head, .editor-grid{
 padding: 0.5em 5px;
-margin: 0.5em 0;
 text-align: center;
 }
 /* Canvas */
 .canvas{
 background-color: #000000cb;
-margin-right:15px ;
 height: 100%;
 overflow-y: unset;
 }
@@ -171,4 +136,30 @@ height: 200px;
 .my-projects .card img{
 cursor: pointer;
 
+}
+.gjs-btn-export {
+  float: right;
+}
+
+
+
+
+/* Styling castom block labels */
+
+.my-custom-block-label {
+  display: flex;
+  align-items: center; 
+  margin-bottom: 5px;
+  flex-direction: column;
+}
+
+.my-custom-block-label .img {
+  margin-right: 5px; 
+  width: 100%; 
+  height: 60px;  
+  margin-bottom: 5px;
+  overflow: hidden;
+  display: flex;
+  flex-wrap: nowrap;
+  object-fit: contain;
 }

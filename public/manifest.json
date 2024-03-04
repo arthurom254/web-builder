@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Atom Website Builder",
+  "name": "Website builder tool through drag  drop ",
   "icons": [
     {
       "src": "favicon.ico",
